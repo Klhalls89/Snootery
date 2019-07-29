@@ -1,16 +1,17 @@
 <template>
   <div id="app">
     <h1>Snootery</h1>
+    <CardContainer />
   </div>
 </template>
 
 <script>
-
+import CardContainer from './components/CardContainer.vue'
 
 export default {
   name: 'app',
   components: {
-   
+   CardContainer
   }
 }
 </script>
