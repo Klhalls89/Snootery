@@ -12,7 +12,12 @@ export default {
   name: 'app',
   components: {
    CardContainer
-  }
+  },
+  data() {
+    return {
+      gallery: []
+    }
+  },
 }
 </script>
 
