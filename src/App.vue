@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Snootery</h1>
-    <CardContainer />
+    <CardContainer v-if="this.$root.$data.images.length" v-bind:images="this.$root.$data.images" />
   </div>
 </template>
 
@@ -23,8 +23,7 @@ export default {
       .catch(error => console.log(error))
     },
     setData(art) {
-      this.$root.$data.gallery = art.records
-      console.log(this.$root.$data.gallery)
+      this.$root.$data.images = art.records
     }
   },
    beforeMount(){
@@ -33,7 +32,7 @@ export default {
 
   data() {
     return {
-      gallery: []
+      images: []
     }
   },
 }
@@ -55,5 +54,4 @@ h1 {
   text-align:  center;
   font-size: 3rem;
 }
-
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div id="GalleryCard">
-    <p>gallery card</p>
-
+    <img v-bind:src="image.baseimageurl"/>
+    <p>{{image.date}}</p>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'GalleryCard',
+  props: ["image"],
   components: {
   }
 }
@@ -17,8 +17,14 @@ export default {
 <style scoped>
 
 #GalleryCard {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  height: 500px;
+  width: 500px;
+}
+
+img {
+  height: 340px;
+  width: 340px;
 }
 
 </style>

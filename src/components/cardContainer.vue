@@ -1,7 +1,8 @@
 <template>
   <div id="CardContainer">
-    <h3>card container</h3>
-    <GalleryCard />
+    <div v-bind:key="image.id" v-for="image in images">
+       <GalleryCard v-bind:image="image" />
+    </div>
   </div>
 </template>
 
@@ -10,6 +11,7 @@ import GalleryCard from './GalleryCard.vue'
 
 export default {
   name: 'CardContainer',
+  props: ["images"],
   components: {
     GalleryCard
   }
@@ -20,6 +22,7 @@ export default {
 
 #CardContainer {
   display: grid;
+  grid-template-columns: repeat(4 1fr);
 }
 
 
