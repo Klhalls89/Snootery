@@ -20,7 +20,7 @@ export default {
       fetch(url)
       .then(result =>  result.json())
       .then(data => this.setData(data))
-      .catch(error => console.log(error))
+      .catch(error => error)
     },
     setData(art) {
       this.$root.$data.images = art.records
