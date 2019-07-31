@@ -1,6 +1,11 @@
 # Snootery
 
-Gives you the feeling of talking around a snooty art gallery with out leaving your home.
+My first ever vue app! It gives you the feeling of walking around an art gallery with out leaving your home. The page pulls from the harvard gallery API. Just like the images it loads the app looks more impresive after a couple glasses of wine. Enjoy Snootery!
+
+## Clone this repo
+```
+https://github.com/Klhalls89/Snootery
+```
 
 ## Project setup
 ```
