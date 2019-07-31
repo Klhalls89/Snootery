@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Snootery</h1>
+    <h1><i class="fas fa-wine-glass-alt"></i>Snootery</h1>
     <CardContainer v-if="this.$root.$data.images.length" v-bind:images="this.$root.$data.images" />
   </div>
 </template>
@@ -42,6 +42,7 @@ export default {
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 body {
@@ -53,5 +54,15 @@ h1 {
   color: #A51C31;
   text-align:  center;
   font-size: 3rem;
+  background-color: #f4f1e6;
+}
+
+#app {
+  background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fas {
+  margin: 5px;
 }
 </style>
