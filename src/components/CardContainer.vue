@@ -22,7 +22,11 @@ export default {
 <style scoped>
 #CardContainer {
   display: grid;
-  grid-template-columns: repeat(4 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding: 0 5rem;
 }
 
 
